@@ -32,7 +32,7 @@ update: 2021.05.08
    
 3. 配置帐号
    
-   Settings > Secrets > New repository secrets， 添加 `ZJU_USERNAME`，内容为浙大通行证账号（学号），添加`ZJU_PASSWORD`，内容为浙大通行证密码。
+   Settings > Secrets > Actions > New repository secrets， 添加 `ZJU_USERNAME`，内容为浙大通行证账号（学号），添加`ZJU_PASSWORD`，内容为浙大通行证密码。
 
    ![](docs/zju_account.png)
 
@@ -57,12 +57,7 @@ update: 2021.05.08
    </details>
    
    <details>
-     <summary>微信pushplus（不再推荐）</summary>
-
-     - 前往 https://pushplus.hxtrip.com ，微信扫码，点击激活消息，复制token。
-
-     - Settings > Secrets > New repository secrets， 添加`PUSHPLUS_TOKEN`，内容为刚才复制的token。
-
+     <summary>微信pushplus（已下线）</summary>
    </details>
 
 5. 配置多人打卡（可选）
@@ -73,12 +68,10 @@ update: 2021.05.08
       - username: ZJU_USERNAME
         password: ZJU_PASSWORD
         dingtalk_token: DINGTALK_TOKEN
-        pushplus_token: PUSHPLUS_TOKEN
         serverchan_key: SERVERCHAN_KEY
       - username: ZJU_USERNAME2
         password: ZJU_PASSWORD2
         dingtalk_token: DINGTALK_TOKEN2
-        pushplus_token: PUSHPLUS_TOKEN2
         serverchan_key: SERVERCHAN_KEY2
    ```
 
@@ -110,8 +103,6 @@ GitHub Actions https://docs.github.com/en/free-pro-team@latest/actions
 钉钉群机器人 https://ding-doc.dingtalk.com/doc#/serverapi3/iydd5h
 
 ServerChan http://sc.ftqq.com/3.version
-
-pushplus https://pushplus.hxtrip.com
 
 
 ## LICENSE
